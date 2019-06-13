@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regbg"
+    tools:context=".RegActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/regtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Registration"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#a9000000"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/regtext"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:padding="6dp"
+        android:ems="10"
+        android:hint=" Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/pwtext"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/emailtext"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:padding="6dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/context"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/pwtext"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:padding="6dp"
+        android:ems="10"
+        android:hint=" Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/context"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:text="register " />
+
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regbtn"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:text="I already have an account" />
+
+</RelativeLayout>

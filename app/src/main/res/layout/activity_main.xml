@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnoneid"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:textAllCaps="false"
+        android:text="How do you feel"
+        android:textColor="#eacee0"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/customstyle"
+        />
+
+    <Button
+        android:id="@+id/btntid"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="8dp"
+        android:textAllCaps="false"
+        android:text="Chat"
+        android:textColor="#eacee0"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/customstyle"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearoneid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.example.coder_kun.simplechat.Gridfrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

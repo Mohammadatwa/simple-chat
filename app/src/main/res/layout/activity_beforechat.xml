@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeforechatActivity"
+    android:background="@drawable/beforchatbg"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customstyle"
+    android:layout_margin="24dp"
+    >
+
+    <TextView
+        android:id="@+id/mynameistextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="my name is"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#ceffffff"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/mynameiseditid"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/mynameistextid"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:padding="6dp"
+        android:hint=" Enter you name here"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/mynameisbtn"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/mynameiseditid"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:text="chat" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/mynameisbtn"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/mynameiskbtn"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:text="VIP I" />
+
+    <Button
+        android:id="@+id/mynameisdbtn"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_below="@id/mynameisbtn"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="33dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:text="VIP II" />
+</LinearLayout>
+</RelativeLayout>
+</RelativeLayout>
